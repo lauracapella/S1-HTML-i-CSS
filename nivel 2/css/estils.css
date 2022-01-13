@@ -87,7 +87,9 @@ section {
 
 .contenidos {
   display: flex;
+  gap:10px;
 }
+
 .contenidos > article {
   padding: 10px;
 }
@@ -102,36 +104,53 @@ article {
 
 aside {
   flex: 1;
-  background-color: chocolate;
+  background-color:darkgray;
 }
 
 article > div {
-  height: 20px;
-  background-color: darkolivegreen;
+  background-color: white;
   flex: 1 1 400px;
+  padding:10px 10px 0px 10px;
 }
 
 .elementosart {
-  background-color: darkslategray;
-  margin-bottom: 0px;
+  text-align: center;
+  background-color: darkgray;
 }
 
 .elementosart2 {
-  height: 20px;
-  background-color: firebrick;
   margin: 10px;
+  text-align: center;
+  padding: 5px;
+}
+
+.contenidos > article > div > .columns-text{
+  column-count: 2;
+  column-gap: 10px;
+}
+
+.contenidos > article > div > img{
+  width:100%;
+}
+
+.contenidos > article > div > h2{
+  background: violet;
+  padding: 10px;
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 footer {
-  background-color: darksalmon;
-  height: 20px;
+  background-color: darkgrey;
+  padding: 2px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1024px) {
   .contenidos {
-    background-color: darkturquoise;
     flex-direction: column;
   }
+
   .contenidos > article {
     margin-bottom: 20px;
     flex-direction: row;
@@ -140,13 +159,14 @@ footer {
   .contenidos > article > div {
     /* flex:unset;
         width: 100%;*/
-}
+  }
 
 @media only screen and (max-width: 768px) {
   header {
     flex-direction: column;
     align-items: center;
   }
+
   .logo {
     flex: unset;
     margin-bottom: 10px;
