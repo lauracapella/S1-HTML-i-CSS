@@ -1,0 +1,162 @@
+.contenidor {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contenedor-flex1 {
+  background-size: cover;
+  background-image: url("../images/header-opt.jpg");
+  background-position: center;
+}
+
+header {
+  display: flex;
+  padding: 10px;
+}
+
+.logo {
+  flex: 1;
+}
+
+.enblanco {
+  flex: 6;
+  padding: 0px 40px 0 20px;
+}
+
+.idiomas {
+  flex: 1;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+nav > li {
+  flex: 1;
+}
+
+nav > ul > li > a > i {
+  margin-right: 5px;
+}
+
+a.menulinks {
+  color: black;
+}
+
+a:hover.menulinks {
+  color: cadetblue;
+}
+
+.idiomas > ul {
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.idiomas > li {
+  flex: 1;
+}
+
+.logo > img {
+  width: 80px;
+}
+
+.titol {
+  padding: auto;
+  margin: 130px 130px 0 130px;
+}
+
+.titol > .menuarea > h1 {
+  text-align: center;
+  color: azure;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menuarea {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px 10px 10px 10px;
+}
+
+section {
+  margin-bottom: 20px;
+  margin: 10px;
+}
+
+.contenidos {
+  display: flex;
+}
+.contenidos > article {
+  padding: 10px;
+}
+
+article {
+  flex: 3;
+  background-color: darkgray;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+aside {
+  flex: 1;
+  background-color: chocolate;
+}
+
+article > div {
+  height: 20px;
+  background-color: darkolivegreen;
+  flex: 1 1 400px;
+}
+
+.elementosart {
+  background-color: darkslategray;
+  margin-bottom: 0px;
+}
+
+.elementosart2 {
+  height: 20px;
+  background-color: firebrick;
+  margin: 10px;
+}
+
+footer {
+  background-color: darksalmon;
+  height: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .contenidos {
+    background-color: darkturquoise;
+    flex-direction: column;
+  }
+  .contenidos > article {
+    margin-bottom: 20px;
+    flex-direction: row;
+  }
+
+  .contenidos > article > div {
+    /* flex:unset;
+        width: 100%;*/
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    flex: unset;
+    margin-bottom: 10px;
+  }
+
+  .enblanco {
+    flex: unset;
+    margin-bottom: 10px;
+  }
+  .idiomas {
+    flex: unset;
+  }
+}
