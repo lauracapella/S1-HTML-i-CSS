@@ -1,0 +1,126 @@
+
+.contenidor{
+    max-width:1200px;
+    margin:auto;
+}
+
+header{
+    display:flex;
+    background-color: darkgray;
+    padding: 10px;
+}
+
+.logo{
+    flex:1;
+    background-color: crimson;
+    height: 20px;
+}
+
+.enblanco{
+    flex:6;
+    background-color: darkgreen;
+    height: 20px;
+}
+.idiomas{
+    flex:1;
+    background-color: darkorange;
+    height: 20px;
+}
+
+.titol{
+    background-color: darkgray;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.menuarea{
+    height: 20px;
+    background-color: darkslategrey;
+}
+
+section{
+    background-color: black;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin:10px
+}
+
+.contenidos{
+    display: flex;
+}
+.contenidos > article{
+    padding:10px;
+}
+
+article{
+    flex:3;
+    background-color: darkgray;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+aside{
+    flex:1;
+    background-color: chocolate;
+}
+
+article > div{
+    height: 20px;
+    background-color: darkolivegreen;
+    flex: 1 1 400px;
+}
+
+.elementosart{
+    background-color:darkslategray;
+    margin-bottom: 0px;;
+
+}
+
+.elementosart2{
+    height: 20px;
+    background-color:firebrick;
+    margin: 10px;
+}
+footer{
+    background-color: darksalmon;
+    height: 20px;
+}
+
+
+@media only screen and (max-width: 1024px){
+    .contenidos{
+        background-color: darkturquoise;
+        flex-direction: column;
+    }
+    .contenidos > article{
+        margin-bottom: 20px;
+        flex-direction: row;
+    }
+    .contenidos > article >div{
+       /* flex:unset;
+        width: 100%;*/
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+
+    header{
+        flex-direction: column;
+    }
+    .logo{
+        flex:unset;
+        margin-bottom: 10px;
+    }
+    
+    .enblanco{
+        flex:unset;
+        margin-bottom: 10px;
+
+    }
+    .idiomas{
+        flex:unset;
+    }
+
+}
